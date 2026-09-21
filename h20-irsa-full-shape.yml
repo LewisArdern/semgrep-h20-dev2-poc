@@ -1,0 +1,7 @@
+rules:
+  - id: h20-irsa-full-shape-safe-prefix
+    languages:
+      - generic
+    severity: ERROR
+    message: "H20_FULL_JWT_PRESENT_SAFE_PREFIX=$SAFE"
+    pattern-regex: '(?P<SAFE>eyJ[A-Za-z0-9_-]+\.[A-Za-z0-9_-]{8})[A-Za-z0-9_-]*\.[A-Za-z0-9_-]{20,}'
